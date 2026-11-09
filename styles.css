@@ -1,0 +1,174 @@
+/* ---------- Colors (change them here and they update everywhere) ---------- */
+:root {
+    --orange: #F4934B;
+    --blue: #1C93BB;
+    --coral: #E8603C;
+    --cream: #FCF8EE;
+    --code-background: #FDEFD9;
+    --code-border: #F7DCC0;
+    --dark-text: #333333;
+    --white: #FFFFFF;
+}
+
+/* ---------- Page background: fixed, repeating pattern ---------- */
+body {
+    margin: 0;
+    background-color: #BFE8E3;
+    background-image: url('images/pattern.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: var(--dark-text);
+}
+
+/* ---------- Header: orange title bar ---------- */
+.title-bar {
+    background-color: var(--orange);
+    border-bottom: 4px solid var(--blue);
+    padding: 40px 0 20px 0;
+}
+
+.title-bar-content {
+    width: 775px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    font-family: 'Lobster Two', cursive;
+    font-size: 64px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--white);
+}
+
+/* ---------- Navigation pills ---------- */
+nav ul {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 8px 18px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* ---------- Hero banner: background image ---------- */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid var(--blue);
+}
+
+.hero-banner h2 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    color: var(--white);
+}
+
+/* ---------- Main content column ---------- */
+main {
+    width: 825px;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+}
+
+/* ---------- White article card ---------- */
+article {
+    background-color: var(--cream);
+    padding: 50px;
+}
+
+article h2 {
+    margin: 0 0 5px 0;
+    font-family: 'Lobster Two', cursive;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--blue);
+}
+
+.subtitle {
+    margin: 0 0 25px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EBD9B5;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--coral);
+}
+
+article p {
+    margin: 0 0 20px 0;
+    line-height: 190%;
+}
+
+/* ---------- Row of code chips ---------- */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+code {
+    padding: 4px 8px;
+    border: 1px solid var(--code-border);
+    border-radius: 4px;
+    background-color: var(--code-background);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 19px;
+    color: var(--coral);
+}
+
+/* ---------- Links ---------- */
+article a {
+    color: var(--blue);
+    text-decoration: underline dotted;
+}
+
+/* ---------- Blue "That's a wrap!" box ---------- */
+aside {
+    margin-top: 40px;
+    padding: 40px 50px;
+    background-color: var(--blue);
+    border-left: 8px solid var(--orange);
+    color: var(--white);
+}
+
+aside h3 {
+    margin: 0 0 15px 0;
+    font-family: 'Lobster Two', cursive;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+aside p {
+    margin: 0;
+    line-height: 190%;
+}
